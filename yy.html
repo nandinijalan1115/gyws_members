@@ -1,0 +1,420 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Gopali Youth Welfare Society | GYWS</title>
+    <link rel="shortcut icon" type="image/x-icon" href="/img/logo.png" />
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="css/main.css" rel="stylesheet">
+
+
+
+
+
+
+
+<style type="text/css">
+body{
+  background-color: #f0f0f0;
+}
+  .grid{
+    position: absolute;
+    top: 200px;
+    width: 1200px;
+    display: flex;
+    margin: auto auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    left: 300px;
+  }
+  .effect-bubba{
+  width: 300px;
+}
+.grid figure {
+    position: relative;
+    float: left;
+    overflow: hidden;
+    margin: 0px;
+    max-width: 300px;
+    max-height: 300px;
+    background: #3085a3;
+    text-align: center;
+    cursor: pointer;
+}
+
+.grid figure img {
+    position: relative;
+    display: block;
+    margin: auto;
+    height: 300px;
+    width: 300px;
+    opacity: 0.8;
+}
+
+.grid figure figcaption {
+    padding: 2em;
+    color: #fff;
+    text-transform: uppercase;
+    backface-visibility: hidden;
+}
+
+
+.grid figure figcaption,
+.grid figure figcaption > a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Anchor will cover the whole item by default */
+/* For some effects it will show as a button */
+.grid figure figcaption > a {
+    z-index: 1000;
+    text-indent: 200%;
+    white-space: nowrap;
+    font-size: 0;
+    opacity: 0;
+}
+
+.grid figure h2 {
+  position: relative;
+    word-spacing: -0.05em;
+    font-size: 25px;
+    font-weight: 300;
+    bottom: 2em;
+}
+
+.grid figure h2 span {
+    font-weight: 600;
+}
+
+.grid figure h2,
+.grid figure p {
+    margin: 0;
+}
+
+.grid figure p {
+    letter-spacing: 1px;
+    font-size: 68.5%;
+}
+
+/* Individual effects */
+/*---------------*/
+/***** Bubba *****/
+/*---------------*/
+
+figure.effect-bubba {
+    background: #9e5406;
+}
+
+figure.effect-bubba img {
+    opacity: 0.7;
+    transition: opacity 0.35s;
+}
+
+figure.effect-bubba:hover img {
+    opacity: 0.4;
+}
+
+figure.effect-bubba figcaption::before,
+figure.effect-bubba figcaption::after {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    bottom: 30px;
+    left: 30px;
+    content: '';
+    opacity: 0;
+    transition: opacity 0.35s, transform 0.35s;
+}
+
+figure.effect-bubba figcaption::before {
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    transform: scale(0,1);
+}
+
+figure.effect-bubba figcaption::after {
+    border-right: 1px solid #fff;
+    border-left: 1px solid #fff;
+    transform: scale(1,0);
+}
+
+figure.effect-bubba h2 {
+    padding-top: 30%;
+    transition: transform 0.35s;
+    transform: translate3d(0,-20px,0);
+}
+
+figure.effect-bubba p {
+    padding: 20px 2.5em;
+    opacity: 0;
+    transition: opacity 0.35s, transform 0.35s;
+    transform: translate3d(0,20px,0);
+}
+
+figure.effect-bubba:hover figcaption::before,
+figure.effect-bubba:hover figcaption::after {
+    opacity: 1;
+    transform: scale(1);
+}
+
+figure.effect-bubba:hover h2,
+figure.effect-bubba:hover p {
+    opacity: 1;
+    transform: translate3d(0,0,0);
+}
+
+
+@media screen and (max-width: 50em) {
+    .content {
+        padding: 0 10px;
+        text-align: center;
+    }
+    .grid figure {
+        display: inline-block;
+        float: none;
+        margin: 10px auto;
+        width: 100%;
+    }
+}
+*, *:after, *:before { box-sizing: border-box; }
+.clearfix:before, .clearfix:after { display: table; content: ''; }
+.clearfix:after { clear: both; }
+
+
+
+  </head>
+
+body {
+    background: #2f3238;
+    color: #fff;
+    font-weight: 400;
+    font-size: 1em;
+    font-family: 'Raleway', Arial, sans-serif;
+}
+
+a {
+    outline: none;
+    color: #3498db;
+    text-decoration: none;
+}
+
+a:hover, a:focus {
+    color: #528cb3;
+}
+
+section {
+    padding: 1em;
+    text-align: center;
+}
+
+.content {
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+.content > h2 {
+    clear: both;
+    margin: 0;
+    padding: 4em 1% 0;
+    color: #484B54;
+    font-weight: 800;
+    font-size: 1.5em;
+}
+
+.content > h2:first-child {
+    padding-top: 0em;
+}
+
+
+img{
+  display: block;
+  margin: auto;
+  width: 250px;
+  border-radius: 0%;
+}
+
+
+.vertical-menu {
+  width: 200px;
+  position: fixed;
+  right: 0px;
+  top: 30%;
+}
+
+.vertical-menu a {
+  background-color: #303030;
+  color: white;
+  display: block; 
+  padding: 12px; 
+  text-decoration: none;
+  text-align: center;
+}
+
+.vertical-menu a:hover {
+  color: yellow;
+}
+.vertical-menu a.first {
+  border-top-left-radius: 10px;
+}
+.vertical-menu a.end {
+  border-bottom-left-radius:10px;
+}
+
+}
+
+</style>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav" style="padding-top: 0px;padding-bottom: 0px;">
+      <div class="container-fluid">
+        <span class="navbar-brand navbar-left">
+          <a class="js-scroll-trigger order-md-first order-0" href="#page-top"><img class="" src="img/logo.png" alt="" style="width:13em" class="d-inline-block align-top"> </a>
+        </span>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav text-uppercase ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#about-uss">ABOUT US</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#services">INITIATIVES</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">FINANCIALS</a>
+                <div class="dropdown-menu bg-dark border-0" aria-labelledby="navbarDropdown" >
+                  <a class="dropdown-item x" href="#">Annual Reports</a>
+                  <a class="dropdown-item x" href="#">Impact Reports</a>
+                  <a class="dropdown-item x" href="#">80 G Certificate </a>
+                </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#team">MEMBERS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#">DONATE</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">CONTACT US</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  <section id="team">
+    <div class="grid">
+      <figure class="effect-bubba">
+        <img id="in1" src="2.jpg">
+        <figcaption>
+                            <h2>Shivam <span>Pandey</span></h2>
+                            <p>UG Coordinator</p>
+
+                        </figcaption>           
+                    </figure>
+      </figure>
+      <figure class="effect-bubba">
+        <img id="in1" src="1.jpg">
+        <figcaption>
+                            <h2>Shivam <span>Pandey</span></h2>
+                            <p>UG Coordinator</p>
+                            <a href="#">View more</a>
+                        </figcaption>           
+                    </figure>
+      </figure>
+      <figure class="effect-bubba">
+        <img id="in1" src="3.jpg">
+        <figcaption>
+                            <h2>Shivam <span>Pandey</span></h2>
+                            <p>UG Coordinator</p>
+
+                        </figcaption>           
+                    </figure>
+      </figure>
+      <figure class="effect-bubba">
+        <img id="in1" src="2.jpg">
+        <figcaption>
+                            <h2>Shivam <span>Pandey</span></h2>
+                            <p>UG Coordinator</p>
+                        </figcaption>           
+                    </figure>
+      </figure>
+      <figure class="effect-bubba">
+        <img id="in1" src="1.jpg">
+        <figcaption>
+                            <h2>Shivam <span>Pandey</span></h2>
+                            <p>UG Coordinator</p>
+                        </figcaption>           
+                    </figure>
+      </figure>
+      <figure class="effect-bubba">
+        <img id="in1" src="3.jpg">
+        <figcaption>
+                            <h2>Shivam <span>Pandey</span></h2>
+                            <p>UG Coordinator</p>
+                        </figcaption>           
+                    </figure>
+      </figure>
+      <figure class="effect-bubba">
+        <img id="in1" src="2.jpg">
+        <figcaption>
+                            <h2>Shivam <span>Pandey</span></h2>
+                            <p>UG Coordinator</p>
+                        </figcaption>           
+                    </figure>
+      </figure>
+      <figure class="effect-bubba">
+        <img id="in1" src="1.jpg">
+        <figcaption>
+                            <h2>Shivam <span>Pandey</span></h2>
+                            <p>UG Coordinator</p>
+                        </figcaption>           
+                    </figure>
+      </figure>
+      
+    </div>
+</section>
+
+
+<div class="vertical-menu">
+  <a class="first" href="#">Advisory Committee</a>
+  <a href="#">Alumni</a>
+  <a href="#">Governing Body</a>
+  <a href="#">Coordinators</a>
+  <a href="#">Team Heads</a>
+  <a class="end" href="#">Senior Executive Members</a>
+</div>
+
+
+</body>
+
+
+</html>
